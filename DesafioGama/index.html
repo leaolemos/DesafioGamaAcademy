@@ -9,7 +9,11 @@
         <meta name="viewport" content="width-device-width, initial-scale=1.0, maxium-scale=1.0">
         
     </head>
+    <script src="main.js"></script> 
+
     <body>
+        
+
         <div class="header">
             <div class="center"></div>
             <a class="logo" >lua<span>store</span>.</a>
@@ -30,21 +34,21 @@
             <form>
                 <div class="input-container">
                     <span>Nome</span>
-                    <input type="text" name="nome" required />
+                    <input id="nomeUsuario" type="text" name="nome" required />
                 </div>
                 <div class="input-container">
                     <span>E-mail</span>
-                    <input type="text" name="nome" required />
+                    <input id="emailUsuario" type="text" name="nome" required />
                 </div>
 
                 <div class="input-container">
                     <span>Telefone</span>
-                    <input type="text" name="nome" required />
+                    <input id="telefoneUsuario" type="text" name="nome" required />
                 </div>
 
                 <p class="warning">* Campos obrigatórios.</p>
                 <div class="input-submit-container">
-                    <input type="submit" name="acao" value="Enviar"/>
+                    <input type="submit" onclick="cadastroPessoa()" name="acao" value="Enviar"/>
                 </div>
             </form>
         </div>
